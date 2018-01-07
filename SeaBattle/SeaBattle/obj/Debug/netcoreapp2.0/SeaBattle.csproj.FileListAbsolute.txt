@@ -1,0 +1,11 @@
+C:\Users\rosty\documents\visual studio 2017\Projects\SeaBattle\SeaBattle\bin\Debug\netcoreapp2.0\SeaBattle.deps.json
+C:\Users\rosty\documents\visual studio 2017\Projects\SeaBattle\SeaBattle\bin\Debug\netcoreapp2.0\SeaBattle.runtimeconfig.json
+C:\Users\rosty\documents\visual studio 2017\Projects\SeaBattle\SeaBattle\bin\Debug\netcoreapp2.0\SeaBattle.runtimeconfig.dev.json
+C:\Users\rosty\documents\visual studio 2017\Projects\SeaBattle\SeaBattle\bin\Debug\netcoreapp2.0\SeaBattle.dll
+C:\Users\rosty\documents\visual studio 2017\Projects\SeaBattle\SeaBattle\bin\Debug\netcoreapp2.0\SeaBattle.pdb
+C:\Users\rosty\documents\visual studio 2017\Projects\SeaBattle\SeaBattle\obj\Debug\netcoreapp2.0\SeaBattle.csprojResolveAssemblyReference.cache
+C:\Users\rosty\documents\visual studio 2017\Projects\SeaBattle\SeaBattle\obj\Debug\netcoreapp2.0\SeaBattle.csproj.CoreCompileInputs.cache
+C:\Users\rosty\documents\visual studio 2017\Projects\SeaBattle\SeaBattle\obj\Debug\netcoreapp2.0\SeaBattle.AssemblyInfoInputs.cache
+C:\Users\rosty\documents\visual studio 2017\Projects\SeaBattle\SeaBattle\obj\Debug\netcoreapp2.0\SeaBattle.AssemblyInfo.cs
+C:\Users\rosty\documents\visual studio 2017\Projects\SeaBattle\SeaBattle\obj\Debug\netcoreapp2.0\SeaBattle.dll
+C:\Users\rosty\documents\visual studio 2017\Projects\SeaBattle\SeaBattle\obj\Debug\netcoreapp2.0\SeaBattle.pdb
