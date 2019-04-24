@@ -6,7 +6,7 @@ namespace SeaBattle
 {
     class GameBoard
     {
-        private Cell[, ] cells;
+        private Cell[,] cells;
         private List<Ship> ships;
         private int boardSize;
         private int shipsCount;
@@ -33,13 +33,13 @@ namespace SeaBattle
            
             foreach (Ship s in ships)
             {
-                 int y, x;
+                int x, y;
                 Orientation orientation;
                 do
                 {
-                    y = random.Next(boardSize);
                     x = random.Next(boardSize);
-                    orientation = (Orientation)orientations.GetValue(random.Next(orientations.Length));
+                    y = random.Next(boardSize);
+                    orientation = (Orientation) orientations.GetValue(random.Next(orientations.Length));
 
                 } while (!CanAddShip(s, y, x, orientation));
 
@@ -62,11 +62,9 @@ namespace SeaBattle
 
         private void SetOccupied(int y, int x, Ship s, Orientation orientation)
         { 
-            
             switch (orientation)
             {
                 case Orientation.HORIZONTAL:
-                    
                     for (int i = y - 1; i <= y + 1; i++)
                     {
                         if (i < 0 || i >= boardSize)
@@ -96,8 +94,6 @@ namespace SeaBattle
                         }
                     }
                     break;
-
-
             }
         }
 
@@ -107,7 +103,6 @@ namespace SeaBattle
             switch (orientation)
             {
                 case Orientation.HORIZONTAL:
-
                     if (x + s.Length > boardSize - 1)
                         return false;
 
@@ -117,8 +112,8 @@ namespace SeaBattle
                             return false;
                     }
                     break;
-                case Orientation.VERTICAL:
 
+                case Orientation.VERTICAL:
                     if (y + s.Length > boardSize - 1)
                         return false;
                     for (int i = 0; i < s.Length; i++)
@@ -128,31 +123,35 @@ namespace SeaBattle
                     }
                     break;
             }
-          
-
             return true;
         }
 
 
         private void prepareCells()
         {
-            for (int i = 0; i < boardSize; i++)
-                for (int j = 0; j < boardSize; j++)
+            for (int i = 0; i < boardSize; i++) {
+                for (int j = 0; j < boardSize; j++) {
                     cells[i, j] = new Cell();
+                }
+            }
         }
 
 
         private void prepareShips()
         {
             int i;
-            for (i = 0; i < Settings.fourDeckersCount; i++)
+            for (i = 0; i < Settings.fourDeckersCount; i++) {
                 ships.Add(new Ship(4));
-            for (i = 0; i < Settings.threeDeckersCount; i++)
+            }
+            for (i = 0; i < Settings.threeDeckersCount; i++) {
                 ships.Add(new Ship(3));
-            for (i = 0; i < Settings.twoDeckersCount; i++)
+            }
+            for (i = 0; i < Settings.twoDeckersCount; i++) {
                 ships.Add(new Ship(2));
-            for (i = 0; i < Settings.oneDeckersCount; i++)
+            }
+            for (i = 0; i < Settings.oneDeckersCount; i++) {
                 ships.Add(new Ship(1));
+            }
         }
     }
 }

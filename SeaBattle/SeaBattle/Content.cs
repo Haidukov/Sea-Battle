@@ -14,13 +14,13 @@ namespace SeaBattle
 
         public Content()
         {
-            type = ContentType.empty;
+            type = ContentType.EMPTY;
         }
 
 
         public void SetDeck()
         {
-            type = ContentType.deck;
+            type = ContentType.DECK;
         }
     }
 }

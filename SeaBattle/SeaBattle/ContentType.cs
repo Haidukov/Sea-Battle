@@ -6,7 +6,7 @@ namespace SeaBattle
 {
     enum ContentType
     {
-        deck,
-        empty
+        DECK,
+        EMPTY
     }
 }
