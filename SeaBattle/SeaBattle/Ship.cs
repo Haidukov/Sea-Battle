@@ -28,7 +28,8 @@ namespace SeaBattle
 
        public bool addDeck(Content content)
         {
-            if (decks.Count > length) {
+            if (decks.Count > length) 
+            {
                 return false;
             }
             decks.Add(content);

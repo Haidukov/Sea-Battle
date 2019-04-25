@@ -8,16 +8,21 @@ namespace SeaBattle
     {
         public static void Render(GameBoard board)
         {
-            if (board == null) return;
+            if (board == null) 
+            {
+                return;
+            }
 
             Console.Title = "Sea Battle";
             Console.ForegroundColor = ConsoleColor.Green;
 
-            for (int i = 0, n = 3 - (int) Math.Log10(board.Size); i < n; i++) {
+            for (int i = 0, n = 3 - (int) Math.Log10(board.Size); i < n; i++) 
+            {
                 Console.Write(" ");
             }
 
-            for (char i = 'A'; i < board.Size + 'A'; i++) {
+            for (char i = 'A'; i < board.Size + 'A'; i++) 
+            {
                 Console.Write(" " + i);
             }
 
@@ -29,7 +34,8 @@ namespace SeaBattle
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write(i + 1 + " ");
 
-                for (int j = 1, n = 1 - (int) Math.Log10(i + 1) + 1; j < n; j++) {
+                for (int j = 1, n = 1 - (int) Math.Log10(i + 1) + 1; j < n; j++) 
+                {
                     Console.Write(" ");
                 }
                     

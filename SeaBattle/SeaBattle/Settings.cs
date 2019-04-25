@@ -6,10 +6,10 @@ namespace SeaBattle
 {
     class Settings
     {
-        public static const int boardSize = 10;
-        public static const int oneDeckersCount = 4;
-        public static const int twoDeckersCount = 3;
-        public static const int threeDeckersCount = 2;
-        public static const int fourDeckersCount = 1;
+        public static const int BOARD_SIZE = 10;
+        public static const int ONE_DECKERS_COUNT = 4;
+        public static const int TWO_DECKERS_COUNT = 3;
+        public static const int THREE_DECKERS_COUNT = 2;
+        public static const int FOUR_DECKERS_COUNT = 1;
     }
 }

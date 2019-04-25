@@ -12,8 +12,8 @@ namespace SeaBattle
             return board;
         }
 
-        private static int getCells() => Settings.boardSize;
+        private static int getCells() => Settings.BOARD_SIZE;
 
-        private static int getShips() => Settings.oneDeckersCount + Settings.twoDeckersCount + Settings.threeDeckersCount + Settings.fourDeckersCount;
+        private static int getShips() => Settings.ONE_DECKERS_COUNT + Settings.TWO_DECKERS_COUNT + Settings.THRE_DECKERS_COUNT + Settings.FOUR_DECKERS_COUNT;
     }
 }
