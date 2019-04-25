@@ -7,6 +7,14 @@ namespace SeaBattle
     class Game
     {
         private GameBoard board;
+        
+        public void Start()
+        {
+            GetBoard();
+            PrepareBoard();
+            RenderBoard();
+            Console.ReadLine();
+        }
 
 
         private void GetBoard()
@@ -25,13 +33,6 @@ namespace SeaBattle
         private void RenderBoard()
         {
             Renderer.Render(board);
-        }
-        public void Start()
-        {
-            GetBoard();
-            PrepareBoard();
-            RenderBoard();
-            Console.ReadLine();
         }
     }
 }
